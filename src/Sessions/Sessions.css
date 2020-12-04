@@ -1,0 +1,40 @@
+.sessionsHeader {
+    background-color: var(--bg-sessions);
+    color: var(--fg-sessions);
+    font-family: Fira Code;
+    font-size: 1.5vmin;
+    text-align: center;
+    padding-top: 1vmin;
+    width: 40%;
+    height: 4vmin;
+    border: 0;
+    margin: 4.5vmin 30% 0 30%;
+}
+
+.sessionsHeader:hover,
+.sessionsListItem:hover {
+    cursor: pointer;
+}
+
+.sessionsListContainer {
+    position: absolute;
+    width: 16%;
+    margin-top: 0.5vmin;
+    left: 17%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sessionsListItem {
+    background-color: var(--bg-sessions);
+    color: var(--fg-sessions);
+    font-size: 1.5vmin;
+    text-align: center;
+    padding: 0.5vmin 0;
+    transition: color 0.5s ease-in-out;
+}
+
+.sessionsListItem:hover {
+    color: var(--fg);
+    transition: 0.5s;
+}
+

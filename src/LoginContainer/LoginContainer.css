@@ -1,0 +1,147 @@
+.container {
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    width: 50%;
+    height: 60%;
+    background-color: var(--bg);
+    box-shadow: 0 1vmin 1vmin rgba(0,0,0,0.4);
+}
+
+
+.loginForm {
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    float: left;
+}
+
+.header {
+    margin: 10% 0 15% 0;
+}
+
+.header h1, 
+.loginForm label {
+    color: var(--fg);
+    display: block;
+}
+
+.loginForm label {
+    font-weight: 700;
+    font-size: 1.75vmin;
+}
+
+.loginForm .password {
+    background-color: var(--bg);
+    color: var(--ph);
+    font-size: 1.75vmin;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px solid var(--fg);
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    padding: 4px 0;
+    margin-bottom: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.loginForm .error {
+    border-bottom: 2px solid var(--invalid);
+    transition: 0.5s;
+}
+
+.loginForm .password:active,
+.loginForm .password:focus {
+    border-bottom: 2px solid var(--ph);
+    transition: 0.5s;
+}
+
+.loginBtn {
+    width: 100%;
+    background-color: var(--bg-btn);
+    border: 0;
+    border-radius: 2px;
+    height: 5vmin;
+    font-size: 1.5vmin;
+    margin-top: 5%;
+    transition: 0.5s all ease-in-out;
+}
+
+.loginBtn span {
+    color: var(--fg-btn);
+}
+
+.loginBtn:hover {
+    cursor: pointer;
+    background-color: var(--bg-btn-h);
+    transition: 0.5s;
+}
+
+.loginBtn:active {
+    background-color: var(--bg-btn-c);
+    transition: 0.5s;
+}
+
+.loader {
+    border: 4px solid var(--bg-btn-h);
+    border-top: 4px solid var(--bg-btn-c);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.banner {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: 55% 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1vmin;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5vmin 0.7vmin 3vmin 3vmin;
+    background: rgb(11,11,11);
+    background: linear-gradient(225deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,0.3) 50%, rgba(11,11,11,0) 60%);
+    overflow: hidden;
+    display: flex;
+    direction: rtl;
+    width: 7vmin;
+    transition: all 0.75s ease-in-out;
+}
+
+.menu:hover {
+    width: 10.5vmin;
+    background: rgb(11,11,11);
+    background: linear-gradient(225deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,0.3) 50%, rgba(11,11,11,0) 60%);
+    transition: 0.5s;
+}
+
+.menu button {
+    border: 0;
+    background-color: transparent;
+}
+
+.menu button:hover {
+    cursor: pointer;
+}
+
+.banner .nihongo {
+    color: var(--fg-jp);
+    font-size: 2.5vmin;
+}

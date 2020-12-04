@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Fira Code";
+  src: url('./fonts/FiraCode.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Umeboshi";
+  src: url('./fonts/umeboshi.ttf');
+}
+
+:root {
+  --bg: #0b0b0b;
+  --fg: #179abb;
+  --fg-jp: #cccccc;
+  --bg-btn: #179abb;
+  --bg-btn-h: #0e7794;
+  --bg-btn-c: #104c5e;
+  --fg-btn: #0b0b0b;
+  --ph: #cccccc;
+  --bg-sessions: #111111;
+  --fg-sessions: #444444;
+  --invalid: #d22946;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Fira Code, Umeboshi;
+  -webkit-user-select: none;
+}
+
+body {
+  background-image: url('./img/wallpaper.png');
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3vmin;
 }

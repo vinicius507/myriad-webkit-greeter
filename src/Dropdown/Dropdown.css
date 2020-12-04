@@ -1,0 +1,44 @@
+.menuHeader {
+    background-color: var(--bg);
+    color: var(--ph);
+    font-size: 1.75vmin;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px solid var(--fg);
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    padding: 4px 0;
+    margin-bottom: 10%;
+    transition: all 0.2s ease-in-out;
+}
+
+.menuHeaderActive {
+    border-bottom: 2px solid var(--ph);
+    transition: 0.2s;
+}
+
+.listContainer {
+    width: 40%;
+    position: absolute;
+    margin-top: -3vmin;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.listItem {
+    background-color: var(--bg-sessions);
+    color: var(--ph);
+    padding: 1.5vmin 0;
+    font-size: 1.75vmin;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuHeader:hover,
+.listItem:hover {
+    cursor: pointer;
+}
+
+.listItem:hover {
+    color: var(--fg);
+    transition: 0.5s;
+}
