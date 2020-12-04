@@ -32,21 +32,19 @@ class LoginContainer extends Component {
             'warningText': '',
         };
 
-        window.lightdm.authenticate();
+        window.lightdm.authenticate(this.state.user.name);
 
         this.handleKeyPress = this.handleKeyPress.bind(this);
     }
 
     submit(e) {
         e.preventDefault();
-        let user = this.state.user;
         let password = this.state.password;
-        if (user && password) {
+        if (password) {
             this.setState({
                 validateStatus: '',
                 warningText: ''
             });
-            window.lightdm.respond(user.name);
             window.lightdm.respond(password);
             this.startDefaultSession();
         } else {
@@ -67,6 +65,7 @@ class LoginContainer extends Component {
         for (let user in this.state.users) {
             if (this.state.users[user].real_name === event.target.innerText) {
                 this.setState({ user: this.state.users[user] });
+                this.cancelAuthentication();
                 break;
             }
         }
@@ -74,7 +73,7 @@ class LoginContainer extends Component {
 
     handleChangePass(event) {
         if (event.key === 'Enter') {
-            this.submit(this.state.user.name, this.state.password);
+            this.submit();
         }
         this.setState({
             password: event.target.value,
@@ -102,7 +101,7 @@ class LoginContainer extends Component {
         window.lightdm.cancel_authentication();
         this.setState({ password: '' });
         this.setState({ isInAuth: false });
-        window.lightdm.authenticate();
+        window.lightdm.authenticate(this.state.user.name);
     }
 
     startDefaultSession(count = 0) {

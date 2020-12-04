@@ -41,7 +41,7 @@
     border-bottom: 2px solid var(--fg);
     transition: all 0.5s ease-in-out;
     width: 100%;
-    padding: 4px 0;
+    padding: 1vmin 0;
     margin-bottom: 10%;
     transition: all 0.5s ease-in-out;
 }
@@ -121,7 +121,7 @@
     overflow: hidden;
     display: flex;
     direction: rtl;
-    width: 7vmin;
+    width: 6.8vmin;
     transition: all 0.75s ease-in-out;
 }
 

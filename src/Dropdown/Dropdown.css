@@ -5,9 +5,8 @@
     text-align: center;
     border: 0;
     border-bottom: 2px solid var(--fg);
-    transition: all 0.5s ease-in-out;
     width: 100%;
-    padding: 4px 0;
+    padding: 1vmin 0;
     margin-bottom: 10%;
     transition: all 0.2s ease-in-out;
 }
