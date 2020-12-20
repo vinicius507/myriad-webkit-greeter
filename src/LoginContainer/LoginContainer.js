@@ -36,6 +36,10 @@ class LoginContainer extends Component {
 
         this.handleKeyPress = this.handleKeyPress.bind(this);
     }
+    
+    componentDidMount() {
+        document.getElementById('pass').focus();
+    }
 
     submit(e) {
         e.preventDefault();

@@ -2,9 +2,9 @@
     display: block;
     position: absolute;
     left: 25%;
-    top: 20%;
+    top: 25%;
     width: 50%;
-    height: 60%;
+    height: 50%;
     background-color: var(--bg);
     box-shadow: 0 1vmin 1vmin rgba(0,0,0,0.4);
 }
@@ -18,7 +18,7 @@
 }
 
 .header {
-    margin: 10% 0 15% 0;
+    margin: 0% 0 15% 0;
 }
 
 .header h1, 
@@ -62,9 +62,9 @@
     background-color: var(--bg-btn);
     border: 0;
     border-radius: 2px;
-    height: 5vmin;
+    height: 4.5vmin;
     font-size: 1.5vmin;
-    margin-top: 5%;
+    margin-top: 1vmin;
     transition: 0.5s all ease-in-out;
 }
 
@@ -117,18 +117,18 @@
     right: 0;
     padding: 1.5vmin 0.7vmin 3vmin 3vmin;
     background: rgb(11,11,11);
-    background: linear-gradient(225deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,0.3) 50%, rgba(11,11,11,0) 60%);
+    background: linear-gradient(225deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,0.3) 40%, rgba(11,11,11,0) 50%);
     overflow: hidden;
     display: flex;
     direction: rtl;
-    width: 6.8vmin;
+    width: 6.35vmin;
     transition: all 0.75s ease-in-out;
 }
 
 .menu:hover {
     width: 10.5vmin;
     background: rgb(11,11,11);
-    background: linear-gradient(225deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,0.3) 50%, rgba(11,11,11,0) 60%);
+    background: linear-gradient(225deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,0.3) 40%, rgba(11,11,11,0) 50%);
     transition: 0.5s;
 }
 
